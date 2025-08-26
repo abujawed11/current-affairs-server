@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+env/
+*.env.bak
+
+# IDEs/editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.out
+
+# Test/coverage
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.mypy_cache/
+.cache/
+
+# Env files
+.env
+.env.*          # keep secrets out of git
+!.env.example    # but track example template
+
+# Database
+*.db
+*.sqlite3
+
+# Docker
+*.pid
+db_data/

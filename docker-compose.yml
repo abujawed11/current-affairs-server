@@ -1,0 +1,22 @@
+﻿version: "3.9"
+services:
+  db:
+    image: mysql:8.0
+    container_name: ca_quiz_db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: ca_quiz
+      MYSQL_USER: causer
+      MYSQL_PASSWORD: capass
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -ppassword || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+volumes:
+  db_data:
