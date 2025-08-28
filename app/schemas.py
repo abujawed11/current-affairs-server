@@ -144,6 +144,7 @@ class AttemptCreateIn(BaseModel):
     # Previously: test_id: int
     # Now the frontend will send the pretty code:
     testId: str = Field(..., description="e.g. TEST000123")
+    forceNew: Optional[bool] = False  # Add this line
 
 
 class QuestionOptionOut(BaseModel):
@@ -191,6 +192,7 @@ class ReviewQuestionOut(BaseModel):
 
 class ReviewOut(BaseModel):
     attemptId: str
+    testId: str  # ← ADD THIS LINE
     score: int
     total: int
     accuracy_pct: float
@@ -251,6 +253,7 @@ class AttemptSummary(BaseModel):
     total: int
     accuracy_pct: float
     submitted_at: datetime
+    time_taken_sec: Optional[int] = None  # Add this line
 
 
 
