@@ -7,6 +7,12 @@ from .db import engine
 from .models import Base
 from .routers.tests import router as tests_router
 from .routers.attempts import router as attempts_router
+from .routers.auth import router as auth_router    # 👈 add
+from .routers.me import router as me_router        # 👈 add
+import logging
+
+
+logging.basicConfig(level=logging.INFO)
 
 load_dotenv()
 
@@ -28,6 +34,10 @@ async def on_startup():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
 
+
+
+app.include_router(auth_router)     # 👈
+app.include_router(me_router)       # 👈
 app.include_router(tests_router)
 app.include_router(attempts_router)
 

@@ -1,0 +1,319 @@
+
+{
+  "title": "Current Affairs – 26 Aug 2025 (Daily)",
+  "duration_sec": 1200,
+  "questions": [
+    {
+      "date": "2025-08-26",
+      "category": "Economy",
+      "stem": "Which organization compiles and releases India's CPI inflation data?",
+      "explanation": "The National Statistical Office (NSO) publishes CPI data monthly.",
+      "options": [
+        { "text": "Reserve Bank of India", "is_correct": false },
+        { "text": "National Statistical Office", "is_correct": true },
+        { "text": "Ministry of Finance", "is_correct": false },
+        { "text": "NITI Aayog", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "International",
+      "stem": "Which country currently holds the rotating G20 presidency in 2025?",
+      "explanation": "Brazil is the G20 president for 2024–25 cycle.",
+      "options": [
+        { "text": "India", "is_correct": false },
+        { "text": "Brazil", "is_correct": true },
+        { "text": "Italy", "is_correct": false },
+        { "text": "South Africa", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Science & Tech",
+      "stem": "What does 'LEO' stand for in satellite launches?",
+      "explanation": "LEO expands to Low Earth Orbit.",
+      "options": [
+        { "text": "Low Earth Orbit", "is_correct": true },
+        { "text": "Light Emission Orbit", "is_correct": false },
+        { "text": "Linear Ecliptic Orbit", "is_correct": false },
+        { "text": "Local Earth Orientation", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "National",
+      "stem": "Which ministry implements the 'PM SVANidhi' scheme?",
+      "explanation": "PM SVANidhi is implemented by the Ministry of Housing and Urban Affairs.",
+      "options": [
+        { "text": "Ministry of Rural Development", "is_correct": false },
+        { "text": "Ministry of Housing and Urban Affairs", "is_correct": true },
+        { "text": "Ministry of MSME", "is_correct": false },
+        { "text": "Ministry of Finance", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Environment",
+      "stem": "The term 'Blue Carbon' primarily refers to carbon captured by:",
+      "explanation": "Blue carbon is carbon captured by oceanic and coastal ecosystems like mangroves and seagrasses.",
+      "options": [
+        { "text": "Desert shrubs", "is_correct": false },
+        { "text": "Tundra mosses", "is_correct": false },
+        { "text": "Coastal and marine ecosystems", "is_correct": true },
+        { "text": "Temperate grasslands", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Economy",
+      "stem": "Which committee recommends the Monetary Policy stance in India?",
+      "explanation": "The six-member Monetary Policy Committee (MPC) decides the policy rate.",
+      "options": [
+        { "text": "Financial Stability and Development Council", "is_correct": false },
+        { "text": "Monetary Policy Committee", "is_correct": true },
+        { "text": "Bank Board Bureau", "is_correct": false },
+        { "text": "Fiscal Responsibility Council", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Sports",
+      "stem": "In cricket, the DRS primarily uses which technology to track the ball?",
+      "explanation": "Hawk-Eye ball-tracking is central to DRS decisions.",
+      "options": [
+        { "text": "Thermal imaging", "is_correct": false },
+        { "text": "Hawk-Eye tracking", "is_correct": true },
+        { "text": "UltraEdge only", "is_correct": false },
+        { "text": "SpiderCam", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Awards",
+      "stem": "The 'Fields Medal' is associated with which field?",
+      "explanation": "It is often described as the Nobel Prize of Mathematics.",
+      "options": [
+        { "text": "Physics", "is_correct": false },
+        { "text": "Mathematics", "is_correct": true },
+        { "text": "Chemistry", "is_correct": false },
+        { "text": "Medicine", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "International",
+      "stem": "The UNFCCC Conference of the Parties (COP) primarily negotiates on:",
+      "explanation": "COP is the decision-making body of the UNFCCC focused on climate change.",
+      "options": [
+        { "text": "Global trade tariffs", "is_correct": false },
+        { "text": "Climate change action", "is_correct": true },
+        { "text": "Maritime piracy", "is_correct": false },
+        { "text": "Intellectual property", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "National",
+      "stem": "Which agency manages India's foreign exchange reserves?",
+      "explanation": "The RBI manages the reserves including gold and foreign currencies.",
+      "options": [
+        { "text": "SEBI", "is_correct": false },
+        { "text": "RBI", "is_correct": true },
+        { "text": "SIDBI", "is_correct": false },
+        { "text": "IRDAI", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Science & Tech",
+      "stem": "In vaccines, 'mRNA' stands for:",
+      "explanation": "mRNA means messenger RNA, used by certain vaccines to instruct cells to make proteins.",
+      "options": [
+        { "text": "Micro Ribonucleic Acid", "is_correct": false },
+        { "text": "Messenger Ribonucleic Acid", "is_correct": true },
+        { "text": "Mito Ribonucleic Acid", "is_correct": false },
+        { "text": "Modular RNA", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Economy",
+      "stem": "The fiscal deficit of the Union Government is primarily financed by:",
+      "explanation": "Fiscal deficit is financed mainly by market borrowings.",
+      "options": [
+        { "text": "Disinvestment proceeds only", "is_correct": false },
+        { "text": "Market borrowings", "is_correct": true },
+        { "text": "Customs duties", "is_correct": false },
+        { "text": "CSR funds", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Environment",
+      "stem": "Which gas has the highest global warming potential over 100 years among these?",
+      "explanation": "Nitrous oxide has a higher GWP than methane and CO2 on a 100-year horizon.",
+      "options": [
+        { "text": "Carbon dioxide (CO2)", "is_correct": false },
+        { "text": "Nitrous oxide (N2O)", "is_correct": true },
+        { "text": "Methane (CH4)", "is_correct": false },
+        { "text": "Ozone (O3)", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Govt Schemes",
+      "stem": "The Ayushman Bharat PM-JAY scheme provides:",
+      "explanation": "PM-JAY offers health insurance coverage for secondary and tertiary care hospitalization.",
+      "options": [
+        { "text": "Interest-free education loans", "is_correct": false },
+        { "text": "Health insurance coverage", "is_correct": true },
+        { "text": "Crop insurance", "is_correct": false },
+        { "text": "Urban housing subsidy", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "International",
+      "stem": "Which currency is used by most Eurozone countries?",
+      "explanation": "The euro (EUR) is shared by Eurozone member states.",
+      "options": [
+        { "text": "Pound sterling", "is_correct": false },
+        { "text": "Euro", "is_correct": true },
+        { "text": "Swiss franc", "is_correct": false },
+        { "text": "Danish krone", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Science & Tech",
+      "stem": "In 5G networks, the 'mmWave' band refers roughly to frequencies:",
+      "explanation": "mmWave typically refers to ~24–100 GHz spectrum allocations.",
+      "options": [
+        { "text": "Below 1 GHz", "is_correct": false },
+        { "text": "Around 24–100 GHz", "is_correct": true },
+        { "text": "1–3 GHz only", "is_correct": false },
+        { "text": "3–10 GHz only", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "National",
+      "stem": "Who appoints the Chief Election Commissioner of India?",
+      "explanation": "The President of India appoints the CEC.",
+      "options": [
+        { "text": "Prime Minister of India", "is_correct": false },
+        { "text": "President of India", "is_correct": true },
+        { "text": "Lok Sabha Speaker", "is_correct": false },
+        { "text": "Vice President of India", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Economy",
+      "stem": "The term 'Repo Rate' is best described as:",
+      "explanation": "Repo rate is the rate at which RBI lends short-term funds to banks against securities.",
+      "options": [
+        { "text": "Bank savings interest rate", "is_correct": false },
+        { "text": "RBI's short-term lending rate to banks", "is_correct": true },
+        { "text": "Corporate bond coupon rate", "is_correct": false },
+        { "text": "Government T-bill yield", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Environment",
+      "stem": "The 'Ramsar Convention' relates to:",
+      "explanation": "It is an international treaty for the conservation and wise use of wetlands.",
+      "options": [
+        { "text": "Desertification", "is_correct": false },
+        { "text": "Wetlands", "is_correct": true },
+        { "text": "Oceans beyond national jurisdiction", "is_correct": false },
+        { "text": "Tropical rainforests", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Sports",
+      "stem": "The 'Grand Slam' in tennis means winning:",
+      "explanation": "All four majors (Australian Open, French Open, Wimbledon, US Open) in a single calendar year.",
+      "options": [
+        { "text": "Any two major titles in a year", "is_correct": false },
+        { "text": "All four majors in a calendar year", "is_correct": true },
+        { "text": "One major for four years", "is_correct": false },
+        { "text": "Any ATP 1000 plus one major", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Awards",
+      "stem": "The 'Booker Prize' recognizes notable works in:",
+      "explanation": "It honors outstanding fiction, primarily novels written in English.",
+      "options": [
+        { "text": "Non-fiction", "is_correct": false },
+        { "text": "Fiction (novels)", "is_correct": true },
+        { "text": "Poetry", "is_correct": false },
+        { "text": "Drama", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "International",
+      "stem": "The IMF provides which of the following primarily?",
+      "explanation": "The IMF provides financial assistance and policy advice to countries facing balance-of-payments problems.",
+      "options": [
+        { "text": "Long-term project loans for infrastructure", "is_correct": false },
+        { "text": "Balance-of-payments support and policy advice", "is_correct": true },
+        { "text": "Grants for NGOs", "is_correct": false },
+        { "text": "Trade dispute arbitration", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Govt Schemes",
+      "stem": "Under PM Kisan, eligible farmers receive:",
+      "explanation": "PM-KISAN provides ₹6,000 per year in three equal installments.",
+      "options": [
+        { "text": "Interest-free loans up to ₹3 lakh", "is_correct": false },
+        { "text": "₹6,000 per year in three installments", "is_correct": true },
+        { "text": "Free crop insurance coverage", "is_correct": false },
+        { "text": "Subsidized tractors", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Science & Tech",
+      "stem": "In cybersecurity, 'phishing' primarily aims to:",
+      "explanation": "Phishing attempts to trick users into revealing sensitive information like passwords.",
+      "options": [
+        { "text": "Increase website SEO ranking", "is_correct": false },
+        { "text": "Harvest sensitive credentials from users", "is_correct": true },
+        { "text": "Speed up downloads", "is_correct": false },
+        { "text": "Compress files more efficiently", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "National",
+      "stem": "The 'Right to Information (RTI) Act' was enacted in India in:",
+      "explanation": "The RTI Act came into force in 2005.",
+      "options": [
+        { "text": "1996", "is_correct": false },
+        { "text": "2005", "is_correct": true },
+        { "text": "2010", "is_correct": false },
+        { "text": "2014", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "category": "Economy",
+      "stem": "Which market is associated with buying and selling of newly issued securities?",
+      "explanation": "The primary market deals with new issues; secondary market deals with already issued securities.",
+      "options": [
+        { "text": "Secondary market", "is_correct": false },
+        { "text": "Primary market", "is_correct": true },
+        { "text": "Forward market", "is_correct": false },
+        { "text": "Spot market", "is_correct": false }
+      ]
+    }
+  ]
+}
