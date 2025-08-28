@@ -193,7 +193,8 @@ class ReviewQuestionOut(BaseModel):
 class ReviewOut(BaseModel):
     attemptId: str
     testId: str  # ← ADD THIS LINE
-    score: int
+    # score: int
+    score: float  # Changed from int to float
     total: int
     accuracy_pct: float
     questions: List[ReviewQuestionOut]
@@ -249,7 +250,8 @@ class AttemptSummary(BaseModel):
     attemptId: str
     testId: str
     title: str
-    score: int
+    # score: int
+    score: float  # Changed from int to float
     total: int
     accuracy_pct: float
     submitted_at: datetime

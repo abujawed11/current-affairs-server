@@ -394,11 +394,11 @@ from sqlalchemy import (
     String, Integer, Text, Boolean, Date, ForeignKey,
     DateTime, Float, UniqueConstraint
 )
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-
-class Base(DeclarativeBase):
-    pass
+from app.db import Base   # <-- use the global Base
+# class Base(DeclarativeBase):
+#     pass
 
 
 # =========================
@@ -506,7 +506,8 @@ class Attempt(Base):
 
     submitted_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
     time_taken_sec: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
-    score: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    # score: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    score: Mapped[Optional[float]] = mapped_column(Float, nullable=True)  # Changed from Integer to Float
     total: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     accuracy_pct: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
 

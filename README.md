@@ -50,3 +50,37 @@ current-affairs-server
 └─ docker-compose.yml
 
 ```
+```
+current-affairs-server
+├─ docker-compose.yml
+├─ README.md
+├─ setup-backend-structure.ps1
+├─ requirements.txt
+├─ migrations
+│  ├─ versions
+│  ├─ env.py
+│  ├─ README
+│  └─ script.py.mako
+├─ alembic.ini
+└─ app
+   ├─ schemas.py
+   ├─ seed.py
+   ├─ security.py
+   ├─ deps.py
+   ├─ models.py
+   ├─ routers
+   │  ├─ attempts.py
+   │  ├─ me.py
+   │  ├─ auth.py
+   │  └─ tests.py
+   ├─ db.py
+   ├─ __init__.py
+   ├─ services
+   │  ├─ scoring.py
+   │  └─ codes.py
+   ├─ seeds
+   │  ├─ daily-2025-08-26.json
+   │  └─ README.md
+   └─ main.py
+
+```

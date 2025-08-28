@@ -658,44 +658,96 @@ async def answer(
     return {"ok": True}
 
 # ---------- submit ----------
+# @router.post("/{attemptId}/submit")
+# async def submit(
+#     attemptId: str,
+#     payload: SubmitIn,
+#     db: AsyncSession = Depends(get_db),
+#     user: User = Depends(get_current_user_jwt),
+# ):
+#     from ..services.scoring import compute_score
+#     from sqlalchemy import select, func
+
+#     log.info("submit: attemptId=%s user_id=%s", attemptId, user.id)
+
+#     att = await _get_attempt_by_code(db, attemptId)
+#     if not att:
+#         raise HTTPException(status_code=404, detail="Attempt not found")
+#     if att.user_id != user.id:
+#         raise HTTPException(status_code=403, detail="Not your attempt")
+
+#     rows = (await db.execute(select(AttemptAnswer).where(AttemptAnswer.attempt_id == att.id))).scalars().all()
+#     correct_flags: list[bool] = []
+#     for r in rows:
+#         if r.option_id is None:
+#             correct_flags.append(False)
+#             r.is_correct = False
+#         else:
+#             o = await db.get(Option, r.option_id)
+#             r.is_correct = bool(o.is_correct)
+#             correct_flags.append(bool(o.is_correct))
+
+#     score, total, acc = compute_score(correct_flags)
+#     att.score = score
+#     att.total = total
+#     att.accuracy_pct = acc
+#     att.time_taken_sec = payload.time_taken_sec
+#     att.submitted_at = func.now()
+
+#     await db.commit()
+#     return {"attemptId": att.attemptId, "score": score, "total": total, "accuracy_pct": acc}
+
+
+# ---------- submit ----------
 @router.post("/{attemptId}/submit")
 async def submit(
-    attemptId: str,
-    payload: SubmitIn,
-    db: AsyncSession = Depends(get_db),
-    user: User = Depends(get_current_user_jwt),
-):
-    from ..services.scoring import compute_score
-    from sqlalchemy import select, func
+      attemptId: str,
+      payload: SubmitIn,
+      db: AsyncSession = Depends(get_db),
+      user: User = Depends(get_current_user_jwt),
+  ):
+      from ..services.scoring import compute_score
+      from sqlalchemy import select, func
 
-    log.info("submit: attemptId=%s user_id=%s", attemptId, user.id)
+      log.info("submit: attemptId=%s user_id=%s", attemptId, user.id)
 
-    att = await _get_attempt_by_code(db, attemptId)
-    if not att:
-        raise HTTPException(status_code=404, detail="Attempt not found")
-    if att.user_id != user.id:
-        raise HTTPException(status_code=403, detail="Not your attempt")
+      att = await _get_attempt_by_code(db, attemptId)
+      if not att:
+          raise HTTPException(status_code=404, detail="Attempt not found")
+      if att.user_id != user.id:
+          raise HTTPException(status_code=403, detail="Not your attempt")
 
-    rows = (await db.execute(select(AttemptAnswer).where(AttemptAnswer.attempt_id == att.id))).scalars().all()
-    correct_flags: list[bool] = []
-    for r in rows:
-        if r.option_id is None:
-            correct_flags.append(False)
-            r.is_correct = False
-        else:
-            o = await db.get(Option, r.option_id)
-            r.is_correct = bool(o.is_correct)
-            correct_flags.append(bool(o.is_correct))
+      rows = (await db.execute(select(AttemptAnswer).where(AttemptAnswer.attempt_id == att.id))).scalars().all()
 
-    score, total, acc = compute_score(correct_flags)
-    att.score = score
-    att.total = total
-    att.accuracy_pct = acc
-    att.time_taken_sec = payload.time_taken_sec
-    att.submitted_at = func.now()
+      correct_flags: list[bool] = []
+      answered_flags: list[bool] = []
 
-    await db.commit()
-    return {"attemptId": att.attemptId, "score": score, "total": total, "accuracy_pct": acc}
+      for r in rows:
+          was_attempted = r.option_id is not None
+          answered_flags.append(was_attempted)
+
+          if not was_attempted:
+              # Unattempted question
+              correct_flags.append(False)  # Not correct since not answered
+              r.is_correct = None  # Mark as unattempted
+          else:
+              # Attempted question
+              o = await db.get(Option, r.option_id)
+              is_correct = bool(o.is_correct)
+              correct_flags.append(is_correct)
+              r.is_correct = is_correct
+
+      # Use new scoring system with negative marking
+      score, total, acc = compute_score(correct_flags, answered_flags)
+
+      att.score = score  # This will now be a float (can be negative)
+      att.total = total
+      att.accuracy_pct = acc
+      att.time_taken_sec = payload.time_taken_sec
+      att.submitted_at = func.now()
+
+      await db.commit()
+      return {"attemptId": att.attemptId, "score": score, "total": total, "accuracy_pct": acc}
 
 # ---------- review ----------
 @router.get("/{attemptId}/review", response_model=ReviewOut)
