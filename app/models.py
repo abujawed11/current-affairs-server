@@ -445,7 +445,7 @@ class Test(Base):
     testId: Mapped[Optional[str]] = mapped_column(String(20), unique=True, index=True, nullable=True)
 
     title: Mapped[str] = mapped_column(String(255), unique=True, index=True)
-    duration_sec: Mapped[int] = mapped_column(Integer, default=1200)
+    duration_sec: Mapped[int] = mapped_column(Integer, default=600)
     category: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     date: Mapped[Optional[date]] = mapped_column(Date, nullable=True)  # Test date
 
