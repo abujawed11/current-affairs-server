@@ -198,7 +198,6 @@ class OptionIn:
 
 @dataclass
 class QuestionIn:
-    date: str
     stem: str
     explanation: str
     options: List[OptionIn]
