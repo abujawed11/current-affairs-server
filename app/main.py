@@ -9,6 +9,7 @@ from .routers.tests import router as tests_router
 from .routers.attempts import router as attempts_router
 from .routers.auth import router as auth_router    # 👈 add
 from .routers.me import router as me_router        # 👈 add
+from .routers.news import router as news_router    # 👈 add
 import logging
 
 
@@ -38,6 +39,7 @@ async def on_startup():
 
 app.include_router(auth_router)     # 👈
 app.include_router(me_router)       # 👈
+app.include_router(news_router)     # 👈
 app.include_router(tests_router)
 app.include_router(attempts_router)
 
