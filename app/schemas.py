@@ -126,7 +126,7 @@ class TestOut(BaseModel):
     title: str
     duration_sec: int
     category: Optional[str] = None
-    date: Optional[date] = None  # Add test date field
+    date: Optional[str] = None  # Add test date field as ISO string (YYYY-MM-DD)
     last_attempt: LastAttemptMini | None = None
 
     

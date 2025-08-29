@@ -125,7 +125,7 @@ async def list_tests(db: AsyncSession = Depends(get_db), user=Depends(get_curren
             title=t.title, 
             duration_sec=t.duration_sec, 
             category=primary_category,
-            date=t.date,
+            date=t.date.isoformat() if t.date else None,
             last_attempt=last_attempt
         ))
     await db.commit()
