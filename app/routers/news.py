@@ -26,7 +26,6 @@ class NewsResponse(BaseModel):
 @router.get("/news", response_model=NewsResponse)
 async def get_news(
     category: str = "general",
-    country: str = "in",
     page_size: int = 20
 ):
     """
@@ -42,42 +41,63 @@ async def get_news(
     if category not in valid_categories:
         category = "general"
     
-    url = "https://newsapi.org/v2/top-headlines"
-    params = {
-        "apiKey": api_key,
-        "country": country,
-        "category": category,
-        "pageSize": min(page_size, 100)  # NewsAPI max is 100
-    }
+    # Try multiple approaches for better results
+    attempts = [
+        # First try: category only (no country filter)
+        {
+            "apiKey": api_key,
+            "category": category,
+            "pageSize": min(page_size, 100)
+        },
+        # Fallback: general news without any filters
+        {
+            "apiKey": api_key,
+            "pageSize": min(page_size, 100)
+        }
+    ]
     
-    try:
-        async with httpx.AsyncClient() as client:
-            response = await client.get(url, params=params)
-            response.raise_for_status()
-            data = response.json()
-        
-        if data.get("status") != "ok":
-            raise HTTPException(status_code=400, detail=data.get("message", "NewsAPI error"))
-        
-        articles = []
-        for article in data.get("articles", []):
-            # Skip articles with removed/null content
-            if not article.get("title") or article.get("title") == "[Removed]":
+    url = "https://newsapi.org/v2/top-headlines"
+    
+    for i, params in enumerate(attempts):
+        try:
+            async with httpx.AsyncClient() as client:
+                response = await client.get(url, params=params)
+                response.raise_for_status()
+                data = response.json()
+            
+            if data.get("status") != "ok":
+                print(f"NewsAPI attempt {i+1} failed: {data.get('message')}")
                 continue
+            
+            # If we get results, process them
+            if data.get("totalResults", 0) > 0:
+                articles = []
+                for article in data.get("articles", []):
+                    # Skip articles with removed/null content
+                    if not article.get("title") or article.get("title") == "[Removed]":
+                        continue
+                        
+                    articles.append(NewsArticle(
+                        title=article["title"],
+                        description=article.get("description"),
+                        url=article["url"],
+                        source=article["source"]["name"],
+                        published_at=article["publishedAt"],
+                        url_to_image=article.get("urlToImage")
+                    ))
                 
-            articles.append(NewsArticle(
-                title=article["title"],
-                description=article.get("description"),
-                url=article["url"],
-                source=article["source"]["name"],
-                published_at=article["publishedAt"],
-                url_to_image=article.get("urlToImage")
-            ))
-        
-        return NewsResponse(
-            articles=articles,
-            total_results=data.get("totalResults", len(articles))
-        )
-        
-    except httpx.HTTPError as e:
-        raise HTTPException(status_code=500, detail=f"Failed to fetch news: {str(e)}")
+                print(f"NewsAPI success on attempt {i+1}, got {len(articles)} articles")
+                return NewsResponse(
+                    articles=articles,
+                    total_results=data.get("totalResults", len(articles))
+                )
+            else:
+                print(f"NewsAPI attempt {i+1} returned 0 results")
+                
+        except Exception as e:
+            print(f"NewsAPI attempt {i+1} error: {str(e)}")
+            continue
+    
+    # If all attempts fail, return empty but valid response
+    print("All NewsAPI attempts failed, returning empty response")
+    return NewsResponse(articles=[], total_results=0)
