@@ -1,0 +1,199 @@
+{
+  "title": "Sports & Awards – 29 Aug 2025 (Moderate Set)",
+  "category": "sports_awards",
+  "date": "2025-08-29",
+  "duration_sec": 600,
+  "questions": [
+    {
+      "stem": "Which Indian player was described as the toughest batter faced by England pacer Mark Wood?",
+      "explanation": "Mark Wood named Rohit Sharma as the toughest batter he faced, choosing him over Virat Kohli. :contentReference[oaicite:1]{index=1}",
+      "options": [
+        { "text": "Virat Kohli", "is_correct": false },
+        { "text": "Rohit Sharma", "is_correct": true },
+        { "text": "KL Rahul", "is_correct": false },
+        { "text": "Shreyas Iyer", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian athlete created history as only the first doubles pair to reach world No. 1 ranking and win an Asian Games badminton gold?",
+      "explanation": "Satwiksairaj Rankireddy and Chirag Shetty became the first Indian men’s doubles to reach world No. 1 and won gold at Asian Games. :contentReference[oaicite:2]{index=2}",
+      "options": [
+        { "text": "Prannoy and Sai Praneeth", "is_correct": false },
+        { "text": "Satwiksairaj Rankireddy & Chirag Shetty", "is_correct": true },
+        { "text": "Kidambi Srikanth & HS Prannoy", "is_correct": false },
+        { "text": "Srikanth & Srikanth", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which sport’s inaugural World Cup was hosted by India in 2025 at Indira Gandhi Indoor Stadium?",
+      "explanation": "India hosted the inaugural Kho Kho World Cup in January 2025 in New Delhi. :contentReference[oaicite:3]{index=3}",
+      "options": [
+        { "text": "Pro Kabaddi League", "is_correct": false },
+        { "text": "Kho Kho", "is_correct": true },
+        { "text": "Kabaddi World Cup", "is_correct": false },
+        { "text": "Sepak Takraw World Cup", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian weightlifter won the gold medal in the women's 48-kg category at the Commonwealth Weightlifting Championships 2025?",
+      "explanation": "Mirabai Chanu won gold in the women’s 48 kg event with a record total of 193 kg at the 2025 Commonwealth Weightlifting Championships. :contentReference[oaicite:4]{index=4}",
+      "options": [
+        { "text": "Priti Sinha", "is_correct": false },
+        { "text": "Mirabai Chanu", "is_correct": true },
+        { "text": "Priteesmita Bhoi", "is_correct": false },
+        { "text": "Dharamjyoti Dewghariya", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which state emerged as overall champion at the Khelo India Water Sports event in J&K in 2025 with 10 golds?",
+      "explanation": "Madhya Pradesh topped the medal tally with 18 medals (10 golds) at the Khelo India Water Sports event. :contentReference[oaicite:5]{index=5}",
+      "options": [
+        { "text": "Odisha", "is_correct": false },
+        { "text": "Kerala", "is_correct": false },
+        { "text": "Madhya Pradesh", "is_correct": true },
+        { "text": "Chhattisgarh", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which surprising IPL incident from 2008 resurfaced in 2025 via unseen footage involving Harbhajan Singh?",
+      "explanation": "Previously unseen video of the Harbhajan Singh–Sreesanth altercation (slap-gate) surfaced, reigniting debate. :contentReference[oaicite:6]{index=6}",
+      "options": [
+        { "text": "A match-fixing confession", "is_correct": false },
+        { "text": "Harbhajan nearly punching Sreesanth", "is_correct": true },
+        { "text": "A disputed catch controversy", "is_correct": false },
+        { "text": "An explosive team argument", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which group of athletes from UPP brings pride to both sports and policing, including a wrestler and a judoka?",
+      "explanation": "UP Police athletes like wrestler Priyanshi Prajapat and judoka Asmita Dey excel in law enforcement and sport. :contentReference[oaicite:7]{index=7}",
+      "options": [
+        { "text": "UP Police personnel", "is_correct": true },
+        { "text": "Indian Army officers", "is_correct": false },
+        { "text": "BSF athletes", "is_correct": false },
+        { "text": "Air Force cadets", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian tennis pair broke into the top ranking and won both the World Tour Super 1000 and a major multi-sport Asian Games gold?",
+      "explanation": "Rankireddy and Shetty achieved No. 1 ranking and won gold at both Asian Games and Commonwealth Games. :contentReference[oaicite:8]{index=8}",
+      "options": [
+        { "text": "Mahesh Bhupathi & Leander Paes", "is_correct": false },
+        { "text": "Satwiksairaj Rankireddy & Chirag Shetty", "is_correct": true },
+        { "text": "Rohan Bopanna & Divij Sharan", "is_correct": false },
+        { "text": "Vijay Amritraj & Ramesh Krishnan", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Commonwealth weightlifter achieved a championship record total of 193 kg in 2025?",
+      "explanation": "Mirabai Chanu lifted a record 193 kg total in the women's 48 kg category at the Commonwealth Weightlifting Championships. :contentReference[oaicite:9]{index=9}",
+      "options": [
+        { "text": "Priti Sinha", "is_correct": false },
+        { "text": "Priteesmita Bhoi", "is_correct": false },
+        { "text": "Mirabai Chanu", "is_correct": true },
+        { "text": "Dharamjyoti Dewghariya", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which national team did India’s men’s kho kho side defeat to win the inaugural World Cup in 2025?",
+      "explanation": "India defeated Nepal in the final of the inaugural Kho Kho World Cup in New Delhi. :contentReference[oaicite:10]{index=10}",
+      "options": [
+        { "text": "Nepal", "is_correct": true },
+        { "text": "Brazil", "is_correct": false },
+        { "text": "South Africa", "is_correct": false },
+        { "text": "Bhutan", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian hockey defender scored over 200 international goals and led India to Olympic bronze in Paris 2024?",
+      "explanation": "Harmanpreet Singh, a drag-flick specialist, scored 205 goals and captained India to bronze at Paris Olympics. :contentReference[oaicite:11]{index=11}",
+      "options": [
+        { "text": "Harmanpreet Singh", "is_correct": true },
+        { "text": "Abhishek Nain", "is_correct": false },
+        { "text": "PR Sreejesh", "is_correct": false },
+        { "text": "Manpreet Singh", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian golfer made a Guinness World Record for the fastest badminton smash at 565 km/h?",
+      "explanation": "Satwiksairaj Rankireddy set the fastest smash record at 565 km/h. :contentReference[oaicite:12]{index=12}",
+      "options": [
+        { "text": "Kidambi Srikanth", "is_correct": false },
+        { "text": "Satwiksairaj Rankireddy", "is_correct": true },
+        { "text": "PV Sindhu", "is_correct": false },
+        { "text": "Srikanth Bammireddy", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which milestone did Madhya Pradesh achieve at the Khelo India Water Sports festival in Dal Lake?",
+      "explanation": "MP became champion with 18 medals—including 10 golds—at the festival. :contentReference[oaicite:13]{index=13}",
+      "options": [
+        { "text": "Made largest delegation", "is_correct": false },
+        { "text": "Top the medal tally with 10 golds", "is_correct": true },
+        { "text": "Set venue world record", "is_correct": false },
+        { "text": "Hosted most events", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which athlete earned two bronzes in track athletics (T35 class) at the 2024 Paris Paralympics for India?",
+      "explanation": "Preethi Pal won bronze in both 100 m and 200 m T35 events in Paris 2024. :contentReference[oaicite:14]{index=14}",
+      "options": [
+        { "text": "Yuliia Shuliar", "is_correct": false },
+        { "text": "Preethi Pal", "is_correct": true },
+        { "text": "Aysel Onder", "is_correct": false },
+        { "text": "Deepthi Jeevanji", "is_correct": false }
+      ]
+    },
+	{
+      "stem": "Which Indian coach award, established in 1985, honours outstanding performance by sports coaches?",
+      "explanation": "The Dronacharya Award, instituted in 1985, is conferred by the Government of India to honour outstanding coaches in sports. :contentReference[oaicite:1]{index=1}",
+      "options": [
+        { "text": "Arjuna Award", "is_correct": false },
+        { "text": "Dronacharya Award", "is_correct": true },
+        { "text": "Khel Ratna Award", "is_correct": false },
+        { "text": "Dhyan Chand Award", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which award, renamed after Major Dhyan Chand in 2021, is India’s highest sporting honour?",
+      "explanation": "The Rajiv Gandhi Khel Ratna was renamed the Major Dhyan Chand Khel Ratna Award in 2021 and is India’s highest sporting honour. :contentReference[oaicite:2]{index=2}",
+      "options": [
+        { "text": "Arjuna Award", "is_correct": false },
+        { "text": "Dronacharya Award", "is_correct": false },
+        { "text": "Arjuna Ratna Award", "is_correct": false },
+        { "text": "Khel Ratna Award", "is_correct": true }
+      ]
+    },
+    {
+      "stem": "Which lifetime achievement award in Indian sports is named after the legendary hockey player and includes a statuette and memento?",
+      "explanation": "The Dhyan Chand Award for Lifetime Achievement is named after Major Dhyan Chand and includes a statuette, certificate, ceremonial dress, and cash prize. :contentReference[oaicite:3]{index=3}",
+      "options": [
+        { "text": "Khel Ratna Award", "is_correct": false },
+        { "text": "Arjuna Award", "is_correct": false },
+        { "text": "Dhyan Chand Award", "is_correct": true },
+        { "text": "Dronacharya Award", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which state-level award from Madhya Pradesh, introduced in 1990, includes a blazer, tie, and ₹200,000 cash prize?",
+      "explanation": "The Vikram Award, instituted in 1990 by Madhya Pradesh, includes ₹2,00,000, a blazer, tie, and certificate and is the highest state sports award in MP. :contentReference[oaicite:4]{index=4}",
+      "options": [
+        { "text": "Arjuna Award", "is_correct": false },
+        { "text": "Vikram Award", "is_correct": true },
+        { "text": "Dhyanchand Award", "is_correct": false },
+        { "text": "Rajiv Gandhi Award", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which award for outstanding coaches is named after a character from the Mahabharata?",
+      "explanation": "The Dronacharya Award is named after Guru Drona (Dronacharya) from the Mahabharata. :contentReference[oaicite:5]{index=5}",
+      "options": [
+        { "text": "Dhyan Chand Award", "is_correct": false },
+        { "text": "Dronacharya Award", "is_correct": true },
+        { "text": "Major Dhyan Chand Khel Ratna", "is_correct": false },
+        { "text": "Arjuna Award", "is_correct": false }
+      ]
+    }
+	
+  ]
+}

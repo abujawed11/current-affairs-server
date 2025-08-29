@@ -1,0 +1,246 @@
+{
+  "title": "Current Affairs – 2025-08-28 (Daily)",
+  "duration_sec": 1200,
+  "questions": [
+    {
+      "date": "2025-08-28",
+      "category": "Economy",
+      "stem": "What significant tariff change on Indian imports came into effect recently?",
+      "explanation": "The US doubled tariffs on Indian imports to 50%, citing geopolitical leverage and India’s oil purchases from Russia.",
+      "options": [
+        { "text": "US imposed 10 % tariffs", "is_correct": false },
+        { "text": "US revoked all tariffs", "is_correct": false },
+        { "text": "US doubled tariffs to 50 %", "is_correct": true },
+        { "text": "India imposed counter-tariffs", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "National",
+      "stem": "Which body did India establish to oversee carbon trading under the Paris Agreement?",
+      "explanation": "India set up a 21-member National Designated Authority led by the Union environment secretary to oversee carbon trading and related mechanisms.",
+      "options": [
+        { "text": "Carbon Regulation Board", "is_correct": false },
+        { "text": "National Designated Authority", "is_correct": true },
+        { "text": "Environmental Trading Commission", "is_correct": false },
+        { "text": "Climate Action Committee", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "International",
+      "stem": "In which multinational exercise is India deploying over 700 soldiers?",
+      "explanation": "India is sending over 700 soldiers to participate in Exercise Bright Star 2025, a key tri-service multilateral military drill in Egypt.",
+      "options": [
+        { "text": "Exercise MALABAR 2025", "is_correct": false },
+        { "text": "Exercise Bright Star 2025", "is_correct": true },
+        { "text": "Exercise Desert Shield", "is_correct": false },
+        { "text": "Exercise VARUNA", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Science/Tech",
+      "stem": "By 2030, what size is India’s bioeconomy projected to reach?",
+      "explanation": "According to the Press Information Bureau, India’s bioeconomy is expected to reach USD 300 billion by 2030.",
+      "options": [
+        { "text": "USD 100 billion", "is_correct": false },
+        { "text": "USD 300 billion", "is_correct": true },
+        { "text": "USD 500 billion", "is_correct": false },
+        { "text": "USD 1 trillion", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Environment",
+      "stem": "What recent infrastructure disruption sparked citizen protests in Nagpur?",
+      "explanation": "A girder jam at Telephone Nagar Square due to flyover project works caused public outrage; NHAI assured action within 48 hours.",
+      "options": [
+        { "text": "Bridge collapse", "is_correct": false },
+        { "text": "Girder jam at Telephone Nagar Square", "is_correct": true },
+        { "text": "Dam overflow", "is_correct": false },
+        { "text": "Road blockade", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Sports",
+      "stem": "Which international sporting event bid did India's cabinet approve?",
+      "explanation": "India’s federal cabinet approved its bid to host the 2030 Commonwealth Games, proposing a 132,000-seat stadium in Ahmedabad.",
+      "options": [
+        { "text": "2026 Commonwealth Games", "is_correct": false },
+        { "text": "2028 Olympic Games", "is_correct": false },
+        { "text": "2030 Commonwealth Games", "is_correct": true },
+        { "text": "2032 Asian Games", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Awards",
+      "stem": "Which awards nominations are open until 30 September 2025?",
+      "explanation": "The National Youth Award 2024 nominations are open from 2 August to 30 September 2025.",
+      "options": [
+        { "text": "Padma Awards", "is_correct": false },
+        { "text": "National Youth Award 2024", "is_correct": true },
+        { "text": "National Teachers Award", "is_correct": false },
+        { "text": "Gopal Ratna Award", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Govt Schemes",
+      "stem": "Which scheme received ₹1,000 crore allocation for 2025-26?",
+      "explanation": "Under the budget for 2025-26, ₹1,000 crore is allocated to the Khelo India programme.",
+      "options": [
+        { "text": "Pradhan Mantri Vikas Karyakram", "is_correct": false },
+        { "text": "Khelo India", "is_correct": true },
+        { "text": "PM-DAKSH", "is_correct": false },
+        { "text": "FAME scheme", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Economy",
+      "stem": "How did Indian stock markets react to the tariff news?",
+      "explanation": "Despite escalating tariffs, Indian markets remained stable, supported by forex reserves and central bank interventions.",
+      "options": [
+        { "text": "Major crash", "is_correct": false },
+        { "text": "Moderate rally", "is_correct": false },
+        { "text": "Stability maintained", "is_correct": true },
+        { "text": "Circuit breaker triggered", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "National",
+      "stem": "Which rescue agency is involved in flood relief operations in Punjab?",
+      "explanation": "The Army and NDMA intensified flood relief in Punjab, evacuating thousands and providing rations and medical aid.",
+      "options": [
+        { "text": "NDRF", "is_correct": false },
+        { "text": "SDRF", "is_correct": false },
+        { "text": "NDMA and Army", "is_correct": true },
+        { "text": "State Fire Services", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "International",
+      "stem": "In response to the tariffs, which countries India strengthened ties with?",
+      "explanation": "Facing US tariffs, India reinforced diplomatic and trade ties with China and Russia.",
+      "options": [
+        { "text": "USA and UK", "is_correct": false },
+        { "text": "China and Russia", "is_correct": true },
+        { "text": "EU and Japan", "is_correct": false },
+        { "text": "Australia and Canada", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Science/Tech",
+      "stem": "Which breakthrough aids early detection of Parkinson’s disease?",
+      "explanation": "Tiny gold particles are being used as a detection tool for early Parkinson’s disease diagnosis.",
+      "options": [
+        { "text": "Carbon nanotubes", "is_correct": false },
+        { "text": "Tiny gold particles", "is_correct": true },
+        { "text": "Quantum dots", "is_correct": false },
+        { "text": "Silicon sensors", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Environment",
+      "stem": "Which region saw deadly cloudbursts, flash floods and landslides halting pilgrimage?",
+      "explanation": "Himalayan regions including Jammu & Kashmir (Vaishno Devi area) experienced deadly monsoon disasters, suspending Yatra routes.",
+      "options": [
+        { "text": "Arunachal Pradesh", "is_correct": false },
+        { "text": "Himalayan region including Vaishno Devi", "is_correct": true },
+        { "text": "Gujarat coast", "is_correct": false },
+        { "text": "Rajasthan deserts", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Sports",
+      "stem": "What is the proposed capacity of the stadium in the 2030 CWG bid?",
+      "explanation": "The bid includes constructing a 132,000-seat stadium in Ahmedabad for the 2030 Commonwealth Games.",
+      "options": [
+        { "text": "50,000 seats", "is_correct": false },
+        { "text": "132,000 seats", "is_correct": true },
+        { "text": "200,000 seats", "is_correct": false },
+        { "text": "75,000 seats", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Awards",
+      "stem": "Which award nominations are open until mid-September 2025?",
+      "explanation": "The National Gopal Ratna Award 2025 has an open nominations window from 15 August to 15 September 2025.",
+      "options": [
+        { "text": "Pradhan Mantri Rashtriya Bal Puraskar", "is_correct": false },
+        { "text": "National Gopal Ratna Award 2025", "is_correct": true },
+        { "text": "Padma Shri", "is_correct": false },
+        { "text": "National Youth Award 2024", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Govt Schemes",
+      "stem": "What is the name of India’s flagship youth-sports development programme?",
+      "explanation": "The government programme aimed at promoting sports among youth is called Khelo India.",
+      "options": [
+        { "text": "Fit India", "is_correct": false },
+        { "text": "Khelo India", "is_correct": true },
+        { "text": "Yuva Shakti", "is_correct": false },
+        { "text": "National Sports Mission", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Economy",
+      "stem": "Which index slipped below 24,550 amid market pressure?",
+      "explanation": "The Nifty 50 dropped below 24,550 as the stock market traded lower on August 28, 2025.",
+      "options": [
+        { "text": "Sensex", "is_correct": false },
+        { "text": "Nifty 50", "is_correct": true },
+        { "text": "Dow Jones", "is_correct": false },
+        { "text": "NASDAQ", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "National",
+      "stem": "Which tourist shrine’s yatra was halted due to landslides?",
+      "explanation": "Landslides near the Vaishno Devi shrine route in Jammu & Kashmir led to Yatra being paused for safety.",
+      "options": [
+        { "text": "Amarnath", "is_correct": false },
+        { "text": "Vaishno Devi", "is_correct": true },
+        { "text": "Golden Temple", "is_correct": false },
+        { "text": "Tirupati", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "International",
+      "stem": "Which US leader’s administration increased tariffs on India?",
+      "explanation": "President Trump’s administration raised tariffs on Indian imports to 50%.",
+      "options": [
+        { "text": "President Biden", "is_correct": false },
+        { "text": "President Trump", "is_correct": true },
+        { "text": "President Obama", "is_correct": false },
+        { "text": "President Clinton", "is_correct": false }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "category": "Science/Tech",
+      "stem": "Which development helps in modelling stellar atmospheres?",
+      "explanation": "A recent scientific model provides new insight into stellar atmospheres, aiding astronomy research.",
+      "options": [
+        { "text": "Dark matter simulation", "is_correct": false },
+        { "text": "Modeling stellar atmospheres", "is_correct": true },
+        { "text": "Quantum computing advance", "is_correct": false },
+        { "text": "AI language model", "is_correct": false }
+      ]
+    }
+  ]
+}
