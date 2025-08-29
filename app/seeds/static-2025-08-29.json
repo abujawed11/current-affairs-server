@@ -1,0 +1,448 @@
+{
+    "title": "Static GK – 29 Aug 2025 (Moderate Set)",
+    "category": "static_gk",
+    "date": "2025-08-29",
+    "duration_sec": 1200,
+    "questions": [
+        {
+            "stem": "Which Indian scientist proposed the Smog Chamber method to study air pollution and chemical reactions in the atmosphere?",
+            "explanation": "Harsh Vardhan and his team pioneered contributions to the Smog Chamber method in atmospheric chemistry.",
+            "options": [
+                {
+                    "text": "Ashutosh Sharma",
+                    "is_correct": false
+                },
+                {
+                    "text": "Harsh Vardhan",
+                    "is_correct": true
+                },
+                {
+                    "text": "T.V. Ramakrishnan",
+                    "is_correct": false
+                },
+                {
+                    "text": "C.N.R. Rao",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which Mughal emperor initiated the construction of the Red Fort in Delhi in 1638?",
+            "explanation": "Shah Jahan shifted the Mughal capital to Shahjahanabad and began construction of the Red Fort in 1638.",
+            "options": [
+                {
+                    "text": "Akbar",
+                    "is_correct": false
+                },
+                {
+                    "text": "Aurangzeb",
+                    "is_correct": false
+                },
+                {
+                    "text": "Shah Jahan",
+                    "is_correct": true
+                },
+                {
+                    "text": "Jahangir",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "The Alcock and Brown flight in 1919 achieved which milestone?",
+            "explanation": "They made the first nonstop transatlantic flight from Newfoundland to Ireland.",
+            "options": [
+                {
+                    "text": "First solo flight around the world",
+                    "is_correct": false
+                },
+                {
+                    "text": "First nonstop transatlantic flight",
+                    "is_correct": true
+                },
+                {
+                    "text": "First flight over the North Pole",
+                    "is_correct": false
+                },
+                {
+                    "text": "First commercial passenger flight",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which metal is named after the Norse god of thunder?",
+            "explanation": "Thorium is named after Thor, the Norse god of thunder.",
+            "options": [
+                {
+                    "text": "Thorium",
+                    "is_correct": true
+                },
+                {
+                    "text": "Uranium",
+                    "is_correct": false
+                },
+                {
+                    "text": "Neptunium",
+                    "is_correct": false
+                },
+                {
+                    "text": "Plutonium",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which constitutional amendment in India added 'secular' to the Preamble?",
+            "explanation": "The 42nd Amendment of 1976 added the words 'secular' and 'socialist' to the Preamble.",
+            "options": [
+                {
+                    "text": "24th Amendment",
+                    "is_correct": false
+                },
+                {
+                    "text": "42nd Amendment",
+                    "is_correct": true
+                },
+                {
+                    "text": "52nd Amendment",
+                    "is_correct": false
+                },
+                {
+                    "text": "61st Amendment",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which river is known as the 'Sorrow of Bengal' due to its frequent flooding?",
+            "explanation": "The Damodar River earned that epithet before dam projects reduced flooding.",
+            "options": [
+                {
+                    "text": "Ganga",
+                    "is_correct": false
+                },
+                {
+                    "text": "Damodar",
+                    "is_correct": true
+                },
+                {
+                    "text": "Kosi",
+                    "is_correct": false
+                },
+                {
+                    "text": "Mahanadi",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which Indian state has the highest number of UNESCO World Heritage Sites (cultural and natural combined)?",
+            "explanation": "Tamil Nadu leads India in number of UNESCO sites overall.",
+            "options": [
+                {
+                    "text": "Uttar Pradesh",
+                    "is_correct": false
+                },
+                {
+                    "text": "Maharashtra",
+                    "is_correct": false
+                },
+                {
+                    "text": "Tamil Nadu",
+                    "is_correct": true
+                },
+                {
+                    "text": "Karnataka",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which particle mediates the weak nuclear force?",
+            "explanation": "The W and Z bosons are the carriers of the weak nuclear force.",
+            "options": [
+                {
+                    "text": "Photon",
+                    "is_correct": false
+                },
+                {
+                    "text": "Gluon",
+                    "is_correct": false
+                },
+                {
+                    "text": "W/Z boson",
+                    "is_correct": true
+                },
+                {
+                    "text": "Graviton",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "In Vedic mathematics, which numeral system base is primarily used?",
+            "explanation": "Vedic math uses the decimal (base-10) system, same as modern arithmetic.",
+            "options": [
+                {
+                    "text": "Binary (base-2)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Octal (base-8)",
+                    "is_correct": false
+                },
+                {
+                    "text": "Decimal (base-10)",
+                    "is_correct": true
+                },
+                {
+                    "text": "Hexadecimal (base-16)",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which language is recognized as a classical language of India despite having fewer native speakers compared to others?",
+            "explanation": "Sanskrit is one of India's classical languages, though fewer natives speak it today.",
+            "options": [
+                {
+                    "text": "Tamil",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sanskrit",
+                    "is_correct": true
+                },
+                {
+                    "text": "Telugu",
+                    "is_correct": false
+                },
+                {
+                    "text": "Kannada",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Who discovered the circulation of blood in the human body?",
+            "explanation": "William Harvey described the systemic circulation in 1628.",
+            "options": [
+                {
+                    "text": "Andreas Vesalius",
+                    "is_correct": false
+                },
+                {
+                    "text": "William Harvey",
+                    "is_correct": true
+                },
+                {
+                    "text": "Galen",
+                    "is_correct": false
+                },
+                {
+                    "text": "Robert Hooke",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which mountain is considered the oldest fold mountain range in India?",
+            "explanation": "The Aravalli Range is one of the oldest fold mountains in the world.",
+            "options": [
+                {
+                    "text": "Himalayas",
+                    "is_correct": false
+                },
+                {
+                    "text": "Aravalli",
+                    "is_correct": true
+                },
+                {
+                    "text": "Vindhyas",
+                    "is_correct": false
+                },
+                {
+                    "text": "Satpuras",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which metal’s high density makes it useful in radiation shielding and heavy-duty weights?",
+            "explanation": "Lead is very dense, making it ideal for shielding and heavy weights.",
+            "options": [
+                {
+                    "text": "Iron",
+                    "is_correct": false
+                },
+                {
+                    "text": "Lead",
+                    "is_correct": true
+                },
+                {
+                    "text": "Gold",
+                    "is_correct": false
+                },
+                {
+                    "text": "Copper",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which classical Indian dance is associated with temple rituals of Tamil Nadu?",
+            "explanation": "Bharatanatyam originated as a temple dance in Tamil Nadu.",
+            "options": [
+                {
+                    "text": "Kathak",
+                    "is_correct": false
+                },
+                {
+                    "text": "Odissi",
+                    "is_correct": false
+                },
+                {
+                    "text": "Kathakali",
+                    "is_correct": false
+                },
+                {
+                    "text": "Bharatanatyam",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "stem": "What type of rock is granite classified as?",
+            "explanation": "Granite is an intrusive igneous rock formed beneath Earth's surface.",
+            "options": [
+                {
+                    "text": "Sedimentary",
+                    "is_correct": false
+                },
+                {
+                    "text": "Metamorphic",
+                    "is_correct": false
+                },
+                {
+                    "text": "Igneous",
+                    "is_correct": true
+                },
+                {
+                    "text": "Clastic",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which treaty ended the First World War?",
+            "explanation": "The Treaty of Versailles, signed in 1919, officially ended WWI.",
+            "options": [
+                {
+                    "text": "Treaty of Paris",
+                    "is_correct": false
+                },
+                {
+                    "text": "Treaty of Versailles",
+                    "is_correct": true
+                },
+                {
+                    "text": "Treaty of Ghent",
+                    "is_correct": false
+                },
+                {
+                    "text": "Treaty of Utrecht",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which Indian state is home to the Eastern Ghats and the Chilika Lake?",
+            "explanation": "Odisha contains both the Eastern Ghats mountain range and Chilika, the largest brackish water lagoon.",
+            "options": [
+                {
+                    "text": "Andhra Pradesh",
+                    "is_correct": false
+                },
+                {
+                    "text": "West Bengal",
+                    "is_correct": false
+                },
+                {
+                    "text": "Odisha",
+                    "is_correct": true
+                },
+                {
+                    "text": "Chhattisgarh",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which classical musical notation system is used in Indian Carnatic music?",
+            "explanation": "Carnatic music uses the Sargam system (Sa, Ri, Ga, Ma, Pa, Da, Ni).",
+            "options": [
+                {
+                    "text": "Do-Re-Mi",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sargam",
+                    "is_correct": true
+                },
+                {
+                    "text": "Solfege",
+                    "is_correct": false
+                },
+                {
+                    "text": "Tablature",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which narrow water body separates the Andaman Islands from the Nicobar Islands?",
+            "explanation": "The Ten Degree Channel runs roughly along 10°N latitude, dividing the Andaman and Nicobar groups.",
+            "options": [
+                {
+                    "text": "Palk Strait",
+                    "is_correct": false
+                },
+                {
+                    "text": "Ten Degree Channel",
+                    "is_correct": true
+                },
+                {
+                    "text": "Malacca Strait",
+                    "is_correct": false
+                },
+                {
+                    "text": "Six Degree Channel",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "stem": "Which Schedule of the Constitution of India allocates seats in the Council of States (Rajya Sabha) to the States and Union Territories?",
+            "explanation": "The Fourth Schedule specifies the allocation of seats in the Rajya Sabha.",
+            "options": [
+                {
+                    "text": "Fifth Schedule",
+                    "is_correct": false
+                },
+                {
+                    "text": "Sixth Schedule",
+                    "is_correct": false
+                },
+                {
+                    "text": "Fourth Schedule",
+                    "is_correct": true
+                },
+                {
+                    "text": "Seventh Schedule",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}
