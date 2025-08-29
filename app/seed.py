@@ -208,6 +208,7 @@ class TestIn:
     title: str
     duration_sec: int
     category: Optional[str]
+    date: Optional[str]  # YYYY-MM-DD format
     questions: List[QuestionIn]
 
 # ---------- Validation ----------
@@ -228,6 +229,17 @@ def validate_payload(obj: dict) -> TestIn:
     category = obj.get("category")  # Optional field
     if category:
         category = str(category).strip()
+    
+    # Handle test-level date
+    test_date = obj.get("date")  # Optional field
+    if test_date:
+        test_date = str(test_date).strip()
+        # Validate date format
+        try:
+            datetime.strptime(test_date, "%Y-%m-%d")
+        except Exception:
+            raise ValueError(f"Invalid test date format: {test_date} (YYYY-MM-DD expected)")
+    
     raw_qs = obj["questions"]
     if not title:
         raise ValueError("title must be non-empty")
@@ -238,14 +250,10 @@ def validate_payload(obj: dict) -> TestIn:
 
     questions: List[QuestionIn] = []
     for i, q in enumerate(raw_qs, start=1):
-        for k in ("date", "stem", "explanation", "options"):
+        for k in ("stem", "explanation", "options"):
             if k not in q:
-                raise ValueError(f"Question #{i} missing '{k}'")
-        # date
-        try:
-            datetime.strptime(q["date"], "%Y-%m-%d")
-        except Exception:
-            raise ValueError(f"Question #{i} invalid date: {q['date']} (YYYY-MM-DD expected)")
+                raise ValueError(f"Question #{i} missing '{k}'")        
+        # No individual date validation needed - using test-level date
         # options
         opts_raw = q["options"]
         if not isinstance(opts_raw, list) or len(opts_raw) != 4:
@@ -267,14 +275,13 @@ def validate_payload(obj: dict) -> TestIn:
 
         questions.append(
             QuestionIn(
-                date=q["date"],
                 stem=str(q["stem"]).strip(),
                 explanation=str(q["explanation"]).strip(),
                 options=opts,
             )
         )
 
-    return TestIn(title=title, duration_sec=duration_sec, category=category, questions=questions)
+    return TestIn(title=title, duration_sec=duration_sec, category=category, date=test_date, questions=questions)
 
 # ---------- Insert ----------
 async def insert_test(session: AsyncSession, payload: TestIn) -> tuple[int, str]:
@@ -284,7 +291,13 @@ async def insert_test(session: AsyncSession, payload: TestIn) -> tuple[int, str]
         raise ValueError(f"Test with title '{payload.title}' already exists (id={existing.id}, testId={existing.testId}).")
 
     # Create Test
-    t = Test(title=payload.title, duration_sec=payload.duration_sec, category=payload.category)
+    test_date_obj = datetime.strptime(payload.date, "%Y-%m-%d").date() if payload.date else None
+    t = Test(
+        title=payload.title, 
+        duration_sec=payload.duration_sec, 
+        category=payload.category,
+        date=test_date_obj
+    )
     session.add(t)
     await session.flush()                 # get t.id
     t.testId = make_code("TEST", t.id)    # 👈 set code
@@ -293,7 +306,7 @@ async def insert_test(session: AsyncSession, payload: TestIn) -> tuple[int, str]
     for q in payload.questions:
         qrow = Question(
             test_id=t.id,
-            date=datetime.strptime(q.date, "%Y-%m-%d").date(),
+            date=test_date_obj or datetime.now().date(),  # Use test date or current date
             category=payload.category or "general",  # Use test category or default
             stem=q.stem,
             explanation=q.explanation,

@@ -125,7 +125,8 @@ class TestOut(BaseModel):
     testId: str
     title: str
     duration_sec: int
-    category: Optional[str] = None  # Add category field
+    category: Optional[str] = None
+    date: Optional[date] = None  # Add test date field
     last_attempt: LastAttemptMini | None = None
 
     

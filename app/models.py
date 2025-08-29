@@ -447,6 +447,7 @@ class Test(Base):
     title: Mapped[str] = mapped_column(String(255), unique=True, index=True)
     duration_sec: Mapped[int] = mapped_column(Integer, default=1200)
     category: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
+    date: Mapped[Optional[date]] = mapped_column(Date, nullable=True)  # Test date
 
     questions: Mapped[List["Question"]] = relationship(
         back_populates="test", cascade="all, delete-orphan"

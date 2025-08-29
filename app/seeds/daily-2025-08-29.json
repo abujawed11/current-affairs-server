@@ -1,0 +1,198 @@
+{
+  "title": "Current Affairs – 29 Aug 2025 (Daily)",
+  "category": "current affairs",
+  "date": "2025-08-29",
+  "duration_sec": 1200,
+  "questions": [
+    {
+      "stem": "Which UK-based firm projected India to become the world’s second-largest economy by PPP by 2038?",
+      "explanation": "Ernst & Young (EY) made this projection in its August 2025 Economy Watch report.",
+      "options": [
+        { "text": "McKinsey", "is_correct": false },
+        { "text": "Ernst & Young", "is_correct": true },
+        { "text": "PwC", "is_correct": false },
+        { "text": "Deloitte", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which new act passed in Parliament on August 11, 2025 provides a statutory framework for sports governance in India?",
+      "explanation": "The National Sports Governance Act, 2025 was passed by both houses in August 2025.",
+      "options": [
+        { "text": "Sports Regulatory Act, 2025", "is_correct": false },
+        { "text": "National Sports Governance Act, 2025", "is_correct": true },
+        { "text": "Olympic Discipline Act, 2025", "is_correct": false },
+        { "text": "Athlete Welfare Act, 2025", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "India’s cabinet approved a bid to host which multi-sport event in 2030?",
+      "explanation": "The cabinet approved India’s bid to host the 2030 Commonwealth Games in Ahmedabad.",
+      "options": [
+        { "text": "2028 Summer Olympics", "is_correct": false },
+        { "text": "2030 Commonwealth Games", "is_correct": true },
+        { "text": "2032 Youth Olympics", "is_correct": false },
+        { "text": "2030 Asian Games", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "What is the name of India’s first full-stack quantum computer launched under the National Quantum Mission?",
+      "explanation": "The QpiAI-Indus 25-qubit quantum computer was launched by startup QpiAI.",
+      "options": [
+        { "text": "Indus-Q", "is_correct": false },
+        { "text": "QpiAI-Indus", "is_correct": true },
+        { "text": "Quantum-Indus", "is_correct": false },
+        { "text": "TIFR-Quantum", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which ministry finalized a 21-member national committee to launch India’s carbon market?",
+      "explanation": "The Ministry of Environment, Forest and Climate Change finalized the committee.",
+      "options": [
+        { "text": "Ministry of Commerce", "is_correct": false },
+        { "text": "Ministry of Environment, Forest and Climate Change", "is_correct": true },
+        { "text": "Ministry of Finance", "is_correct": false },
+        { "text": "Ministry of Industry", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which state CM announced a 16-fold increase in the sports budget and plans to make Hyderabad a global sports hub?",
+      "explanation": "Telangana CM A. Revanth Reddy made the announcement at the Telangana Sports Hub meeting.",
+      "options": [
+        { "text": "Karnataka", "is_correct": false },
+        { "text": "Tamil Nadu", "is_correct": false },
+        { "text": "Telangana", "is_correct": true },
+        { "text": "Andhra Pradesh", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "National Sports Day in India honors which legendary hockey player?",
+      "explanation": "It is celebrated on Major Dhyan Chand’s birthday, known as the 'Wizard of Hockey'.",
+      "options": [
+        { "text": "Balbir Singh", "is_correct": false },
+        { "text": "Major Dhyan Chand", "is_correct": true },
+        { "text": "Pargat Singh", "is_correct": false },
+        { "text": "Dhanraj Pillay", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which state government released ₹4.9 crore in pending sports incentives to athletes on National Sports Day?",
+      "explanation": "The Andhra Pradesh government released the pending incentives.",
+      "options": [
+        { "text": "Telangana", "is_correct": false },
+        { "text": "Andhra Pradesh", "is_correct": true },
+        { "text": "Karnataka", "is_correct": false },
+        { "text": "Tamil Nadu", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which stock index in India remained steady despite looming US tariffs, supported by forex reserves?",
+      "explanation": "The Nifty 50 index held steady, aided by strong reserves and RBI support.",
+      "options": [
+        { "text": "Sensex", "is_correct": false },
+        { "text": "Nifty 50", "is_correct": true },
+        { "text": "Dow Jones", "is_correct": false },
+        { "text": "FTSE 100", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which city is hosting the two-day national conference of SC/ST welfare committees starting August 29, 2025?",
+      "explanation": "Bhubaneswar is hosting the conference of SC/ST welfare committee chairpersons.",
+      "options": [
+        { "text": "New Delhi", "is_correct": false },
+        { "text": "Bhubaneswar", "is_correct": true },
+        { "text": "Bengaluru", "is_correct": false },
+        { "text": "Chennai", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which country imposed 50% tariffs affecting Indian exports starting August 27, 2025?",
+      "explanation": "The United States confirmed the tariff, pressuring Indian exporters.",
+      "options": [
+        { "text": "China", "is_correct": false },
+        { "text": "United States", "is_correct": true },
+        { "text": "Canada", "is_correct": false },
+        { "text": "Russia", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which startup unveiled India’s 25-qubit quantum computer 'QpiAI-Indus'?",
+      "explanation": "The Bengaluru-based startup QpiAI unveiled the QpiAI-Indus under the National Quantum Mission.",
+      "options": [
+        { "text": "IIT Bombay", "is_correct": false },
+        { "text": "QpiAI", "is_correct": true },
+        { "text": "ISRO", "is_correct": false },
+        { "text": "DRDO", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which department signed an MoU with QCI to enhance welfare services for military veterans?",
+      "explanation": "The Department of Ex-Servicemen Welfare signed the MoU with QCI.",
+      "options": [
+        { "text": "Ministry of Defence", "is_correct": false },
+        { "text": "Department of Ex-Servicemen Welfare", "is_correct": true },
+        { "text": "Ministry of Home Affairs", "is_correct": false },
+        { "text": "Ministry of Social Justice", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which new sports university was launched in Telangana under its global-sports-hub initiative?",
+      "explanation": "The Young India Sports University was launched under Telangana’s sports hub plan.",
+      "options": [
+        { "text": "Hyderabad Sports University", "is_correct": false },
+        { "text": "Young India Sports University", "is_correct": true },
+        { "text": "Telangana Sports University", "is_correct": false },
+        { "text": "Global Sports University", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "On National Sports Day 2025, which Prime Minister paid tribute to Major Dhyan Chand?",
+      "explanation": "Prime Minister Narendra Modi honored Dhyan Chand on National Sports Day.",
+      "options": [
+        { "text": "Rahul Gandhi", "is_correct": false },
+        { "text": "Narendra Modi", "is_correct": true },
+        { "text": "Mamata Banerjee", "is_correct": false },
+        { "text": "Arvind Kejriwal", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "What theme did Chhattisgarh adopt for National Sports Day celebrations?",
+      "explanation": "The theme was 'One hour, on the playground'.",
+      "options": [
+        { "text": "One hour, on the playground", "is_correct": true },
+        { "text": "Two hours, on the playground", "is_correct": false },
+        { "text": "Thirty minutes, on the playground", "is_correct": false },
+        { "text": "Three hours, on the playground", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "India’s forex reserves helped stabilize the rupee amid tariff threats. True or false?",
+      "explanation": "True — reserves and RBI support kept rupee stable.",
+      "options": [
+        { "text": "True", "is_correct": true },
+        { "text": "False", "is_correct": false },
+        { "text": "Uncertain", "is_correct": false },
+        { "text": "Partially true", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Who inaugurated the SC/ST welfare conference in Bhubaneswar on August 29, 2025?",
+      "explanation": "Lok Sabha Speaker Om Birla inaugurated the event.",
+      "options": [
+        { "text": "Jagdeep Dhankhar", "is_correct": false },
+        { "text": "Om Birla", "is_correct": true },
+        { "text": "Surama Padhi", "is_correct": false },
+        { "text": "Mohan Charan Majhi", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "India deepened engagement with which two countries to balance pressure from US tariffs?",
+      "explanation": "India strengthened ties with China and Russia.",
+      "options": [
+        { "text": "US and UK", "is_correct": false },
+        { "text": "China and Russia", "is_correct": true },
+        { "text": "Australia and Canada", "is_correct": false },
+        { "text": "Japan and Germany", "is_correct": false }
+      ]
+    }
+  ]
+}
