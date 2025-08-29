@@ -1,0 +1,208 @@
+{
+  "title": "Science & Technology – 29 Aug 2025 (Moderate Set)",
+  "category": "science_tech",
+  "date": "2025-08-29",
+  "duration_sec": 600,
+  "questions": [
+    {
+      "stem": "Which company’s AGM announced major investments to drive AI adoption across India, including AI infrastructure and talent development?",
+      "explanation": "At Reliance AGM 2025, Mukesh Ambani unveiled initiatives to boost AI infrastructure, talent development, and integration across sectors. :contentReference[oaicite:1]{index=1}",
+      "options": [
+        { "text": "Tata Group", "is_correct": false },
+        { "text": "Adani Group", "is_correct": false },
+        { "text": "Reliance Industries", "is_correct": true },
+        { "text": "Infosys", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which country pledged over ¥10 trillion (approx. USD 68 billion) in investment and signed an economic pact on semiconductors and AI with India?",
+      "explanation": "Japan committed over ¥10 trillion and discussions covered semiconductors, AI, and critical minerals. :contentReference[oaicite:2]{index=2}",
+      "options": [
+        { "text": "United States", "is_correct": false },
+        { "text": "Japan", "is_correct": true },
+        { "text": "China", "is_correct": false },
+        { "text": "Germany", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which spacecraft successfully completed a splashdown in the Indian Ocean after a 66-minute suborbital flight, marking the 10th Starship test flight?",
+      "explanation": "SpaceX's Starship S37 splashed down in the Indian Ocean after a 66-minute flight, showcasing reusable rocket tech. :contentReference[oaicite:3]{index=3}",
+      "options": [
+        { "text": "Falcon 9 Zero", "is_correct": false },
+        { "text": "Starship S37", "is_correct": true },
+        { "text": "Dragon Crew-10", "is_correct": false },
+        { "text": "Blue Origin New Shepard", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which French aerospace company is collaborating with India to produce advanced jet engines domestically for the AMCA stealth fighter?",
+      "explanation": "India is working with France’s Safran to domestically produce jet engines for the AMCA stealth fighter. :contentReference[oaicite:4]{index=4}",
+      "options": [
+        { "text": "Safran", "is_correct": true },
+        { "text": "Dassault", "is_correct": false },
+        { "text": "Thales", "is_correct": false },
+        { "text": "Airbus", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Earth-observation satellite featuring the largest radar antenna ever deployed unfolded in orbit in August 2025?",
+      "explanation": "NASA-ISRO’s NISAR satellite deployed a 39-ft gold-coated mesh radar antenna—the largest ever in space. :contentReference[oaicite:5]{index=5}",
+      "options": [
+        { "text": "RISAT-2BR2", "is_correct": false },
+        { "text": "Cartosat-3", "is_correct": false },
+        { "text": "NISAR", "is_correct": true },
+        { "text": "GSAT-20", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which program, launched by STPI, C-DOT, and TiE Delhi-NCR, supports DeepTech startups in AI, UAVs, cybersecurity, LiFi, and blockchain?",
+      "explanation": "The Samarth Incubation Program (Cohort II) supports DeepTech startups in these sectors. :contentReference[oaicite:6]{index=6}",
+      "options": [
+        { "text": "Startup India", "is_correct": false },
+        { "text": "Samarth Incubation Program", "is_correct": true },
+        { "text": "Atal Innovation Mission", "is_correct": false },
+        { "text": "Make in India Tech", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "By 2030, India’s bioeconomy is projected to reach which value according to the Minister of State for S&T?",
+      "explanation": "India’s bioeconomy is expected to reach USD 300 billion by 2030. :contentReference[oaicite:7]{index=7}",
+      "options": [
+        { "text": "USD 100 billion", "is_correct": false },
+        { "text": "USD 300 billion", "is_correct": true },
+        { "text": "USD 500 billion", "is_correct": false },
+        { "text": "USD 700 billion", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which summit, started at IIT Kanpur, brings together scientists, policy experts, and industry to align research, innovation, and policy?",
+      "explanation": "TRIPS 2025 (Technology, Research, Innovation, and Policy Summit) was launched at IIT Kanpur. :contentReference[oaicite:8]{index=8}",
+      "options": [
+        { "text": "TechPolicy India", "is_correct": false },
+        { "text": "TRIPS 2025", "is_correct": true },
+        { "text": "INNOVATE Summit", "is_correct": false },
+        { "text": "SciTech India", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian space initiative successfully completed its first Integrated Air Drop Test (IADT-01) for crew module recovery?",
+      "explanation": "ISRO completed the IADT-01 parachute-based deceleration test for Gaganyaan. :contentReference[oaicite:9]{index=9}",
+      "options": [
+        { "text": "Chandrayaan-3", "is_correct": false },
+        { "text": "Gaganyaan", "is_correct": true },
+        { "text": "Aditya L1", "is_correct": false },
+        { "text": "Mangalyaan", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "What is the name of India’s first full-stack quantum computer launched by QpiAI under the National Quantum Mission?",
+      "explanation": "QpiAI-Indus is India’s first full-stack 25-qubit quantum computer under the National Quantum Mission. :contentReference[oaicite:10]{index=10}",
+      "options": [
+        { "text": "QpiAI-Indus", "is_correct": true },
+        { "text": "Quantum Bharat", "is_correct": false },
+        { "text": "Indus-Q", "is_correct": false },
+        { "text": "Q-TIFR", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Under the National Quantum Mission, which two IITs were selected as thematic hubs for quantum computing and communication?",
+      "explanation": "IISc Bengaluru (computing) and IIT Madras (communications) are two of the four T-Hubs. :contentReference[oaicite:11]{index=11}",
+      "options": [
+        { "text": "IIT Bombay & IIT Delhi", "is_correct": false },
+        { "text": "IISc Bengaluru & IIT Madras", "is_correct": true },
+        { "text": "IIT Roorkee & IISc Bengaluru", "is_correct": false },
+        { "text": "IIT Madras & IIT Bombay", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which nation’s proactive quantum technology programme, including a Quantum Skills Taskforce, was highlighted as a model in a Financial Times letter?",
+      "explanation": "The UK’s national quantum strategy, including the Quantum Skills Taskforce, was praised. :contentReference[oaicite:12]{index=12}",
+      "options": [
+        { "text": "United States", "is_correct": false },
+        { "text": "China", "is_correct": false },
+        { "text": "United Kingdom", "is_correct": true },
+        { "text": "Germany", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which phenomenon may accelerate biological aging comparable to long-term smoking, according to a recent study?",
+      "explanation": "Prolonged exposure to heat waves may speed up aging similarly to smoking or alcohol. :contentReference[oaicite:13]{index=13}",
+      "options": [
+        { "text": "Air pollution", "is_correct": false },
+        { "text": "Heat waves", "is_correct": true },
+        { "text": "High humidity", "is_correct": false },
+        { "text": "Blue light", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which breakthrough allows electron spin loss to drive magnetization switching, tripling efficiency in spintronic devices?",
+      "explanation": "Electron spin loss can now drive magnetization switching, improving spintronic device efficiency ~3×. :contentReference[oaicite:14]{index=14}",
+      "options": [
+        { "text": "Altermagnetism", "is_correct": false },
+        { "text": "Photon spin conversion", "is_correct": false },
+        { "text": "Electron spin loss", "is_correct": true },
+        { "text": "Superconductive switching", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian initiative plans to deploy a constellation of 52 satellites over the next five years for enhanced surveillance?",
+      "explanation": "India plans to launch 52 satellites in five years to boost space-based surveillance. :contentReference[oaicite:15]{index=15}",
+      "options": [
+        { "text": "Gaganyaan Program", "is_correct": false },
+        { "text": "National Quantum Mission", "is_correct": false },
+        { "text": "Satellite Surveillance Constellation", "is_correct": true },
+        { "text": "Digital Earth Mission", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which naval defense initiative, unveiled as 'Sudarshan Chakra,' integrates AI, quantum tech, and multi-domain sensor fusion?",
+      "explanation": "Mission Sudarshan Chakra integrates AI, quantum computing, and multi-domain sensors for defense. :contentReference[oaicite:16]{index=16}",
+      "options": [
+        { "text": "Iron Dome", "is_correct": false },
+        { "text": "Project Netra", "is_correct": false },
+        { "text": "Mission Sudarshan Chakra", "is_correct": true },
+        { "text": "Agni Shield", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which Indian institute began offering BTech programs in AI, VLSI, Mechatronics, and ML for the first time in 2025–26?",
+      "explanation": "CAS (part of AKTU, Lucknow) launched BTech courses in AI/ML, VLSI, and Mechatronics. :contentReference[oaicite:17]{index=17}",
+      "options": [
+        { "text": "IIT Kanpur", "is_correct": false },
+        { "text": "CAS-AKTU, Lucknow", "is_correct": true },
+        { "text": "IISc Bengaluru", "is_correct": false },
+        { "text": "BITS Pilani", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which collaborative project by IIIT Pune and NIT Raipur, funded for ₹4.2 cr, aims to develop next-gen digital forensic tools using ML and deep learning?",
+      "explanation": "Professors from IIIT Pune and NIT Raipur received ₹4.2 cr funding to build ML-powered forensic tools. :contentReference[oaicite:18]{index=18}",
+      "options": [
+        { "text": "Cyber Forensics Project", "is_correct": false },
+        { "text": "Digital Evidence AI Initiative", "is_correct": false },
+        { "text": "Next-gen Digital Forensics Project", "is_correct": true },
+        { "text": "ML Crime Tools Project", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which rover-style robotic innovation was highlighted in August 2025 for its potential to assist in emergencies?",
+      "explanation": "ASU unveiled advanced robotic dogs using AI to assist in emergency response. :contentReference[oaicite:19]{index=19}",
+      "options": [
+        { "text": "AI-powered humanoids", "is_correct": false },
+        { "text": "Robotic dogs", "is_correct": true },
+        { "text": "Swarm drones", "is_correct": false },
+        { "text": "AI-controlled exosuits", "is_correct": false }
+      ]
+    },
+    {
+      "stem": "Which scientific breakthrough let two spacecraft align to recreate a solar eclipse and capture rare solar corona images?",
+      "explanation": "Two spacecraft aligned perfectly to recreate a solar eclipse and image the solar corona. :contentReference[oaicite:20]{index=20}",
+      "options": [
+        { "text": "Moon-sat tethering", "is_correct": false },
+        { "text": "Solar twin alignment", "is_correct": false },
+        { "text": "Spacecraft eclipse simulation", "is_correct": true },
+        { "text": "Coronal beam scanning", "is_correct": false }
+      ]
+    }
+  ]
+}
