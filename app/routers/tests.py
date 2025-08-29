@@ -78,7 +78,12 @@ router = APIRouter(prefix="/tests", tags=["tests"])
 
 def normalize_category(category: str) -> str:
     """Normalize backend categories to match frontend category keys"""
+    if not category:
+        return None
+        
+    # Make mapping case-insensitive by creating both cases
     category_mapping = {
+        # Title Case versions
         "Economy": "economy",
         "International": "current_affairs", 
         "Science & Tech": "science_tech",
@@ -94,9 +99,34 @@ def normalize_category(category: str) -> str:
         "Current Affairs": "current_affairs",
         "Polity": "polity",
         "Science": "science_tech",
-        "Technology": "science_tech"
+        "Technology": "science_tech",
+        
+        # Lowercase versions (for your seed data)
+        "economy": "economy",
+        "international": "current_affairs", 
+        "science & tech": "science_tech",
+        "national": "polity",
+        "environment": "environment",
+        "sports": "sports_awards",
+        "awards": "sports_awards", 
+        "govt schemes": "polity",
+        "history": "history",
+        "geography": "geography",
+        "art & culture": "art_culture",
+        "static gk": "static_gk",
+        "current affairs": "current_affairs",  # 👈 This will handle your seed data
+        "polity": "polity",
+        "science": "science_tech",
+        "technology": "science_tech"
     }
-    return category_mapping.get(category, category.lower().replace(" ", "_"))
+    
+    # Try exact match first, then fallback to lowercase replacement
+    normalized = category_mapping.get(category)
+    if normalized:
+        return normalized
+    
+    # Fallback: convert to snake_case
+    return category.lower().replace(" ", "_").replace("&", "").replace("  ", "_")
 
 @router.get("", response_model=list[TestOut])
 async def list_tests(db: AsyncSession = Depends(get_db), user=Depends(get_current_user_jwt)):
