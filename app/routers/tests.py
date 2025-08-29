@@ -76,6 +76,28 @@ router = APIRouter(prefix="/tests", tags=["tests"])
 
 router = APIRouter(prefix="/tests", tags=["tests"])
 
+def normalize_category(category: str) -> str:
+    """Normalize backend categories to match frontend category keys"""
+    category_mapping = {
+        "Economy": "economy",
+        "International": "current_affairs", 
+        "Science & Tech": "science_tech",
+        "National": "polity",
+        "Environment": "environment",
+        "Sports": "sports_awards",
+        "Awards": "sports_awards", 
+        "Govt Schemes": "polity",
+        "History": "history",
+        "Geography": "geography",
+        "Art & Culture": "art_culture",
+        "Static GK": "static_gk",
+        "Current Affairs": "current_affairs",
+        "Polity": "polity",
+        "Science": "science_tech",
+        "Technology": "science_tech"
+    }
+    return category_mapping.get(category, category.lower().replace(" ", "_"))
+
 @router.get("", response_model=list[TestOut])
 async def list_tests(db: AsyncSession = Depends(get_db), user=Depends(get_current_user_jwt)):
     tests = (await db.execute(select(Test))).scalars().all()
@@ -83,6 +105,10 @@ async def list_tests(db: AsyncSession = Depends(get_db), user=Depends(get_curren
     for t in tests:
         if not t.testId:
             t.testId = make_code("TEST", t.id)
+        
+        # Use the test's category directly, with normalization
+        primary_category = normalize_category(t.category) if t.category else None
+        
         # latest submitted attempt for this user & test
         last = (await db.execute(
             select(Attempt).where(
@@ -94,7 +120,13 @@ async def list_tests(db: AsyncSession = Depends(get_db), user=Depends(get_curren
         last_attempt = None
         if last and last.accuracy_pct is not None:
             last_attempt = {"attemptId": last.attemptId, "accuracy_pct": float(last.accuracy_pct)}
-        out.append(TestOut(testId=t.testId, title=t.title, duration_sec=t.duration_sec, last_attempt=last_attempt))
+        out.append(TestOut(
+            testId=t.testId, 
+            title=t.title, 
+            duration_sec=t.duration_sec, 
+            category=primary_category,
+            last_attempt=last_attempt
+        ))
     await db.commit()
     return out
 

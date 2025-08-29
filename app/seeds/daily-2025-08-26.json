@@ -1,11 +1,11 @@
 
 {
   "title": "Current Affairs – 26 Aug 2025 (Daily)",
+  "category": "current affairs",
   "duration_sec": 1200,
   "questions": [
     {
       "date": "2025-08-26",
-      "category": "Economy",
       "stem": "Which organization compiles and releases India's CPI inflation data?",
       "explanation": "The National Statistical Office (NSO) publishes CPI data monthly.",
       "options": [
@@ -17,7 +17,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "International",
       "stem": "Which country currently holds the rotating G20 presidency in 2025?",
       "explanation": "Brazil is the G20 president for 2024–25 cycle.",
       "options": [
@@ -29,7 +28,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Science & Tech",
       "stem": "What does 'LEO' stand for in satellite launches?",
       "explanation": "LEO expands to Low Earth Orbit.",
       "options": [
@@ -41,7 +39,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "National",
       "stem": "Which ministry implements the 'PM SVANidhi' scheme?",
       "explanation": "PM SVANidhi is implemented by the Ministry of Housing and Urban Affairs.",
       "options": [
@@ -53,7 +50,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Environment",
       "stem": "The term 'Blue Carbon' primarily refers to carbon captured by:",
       "explanation": "Blue carbon is carbon captured by oceanic and coastal ecosystems like mangroves and seagrasses.",
       "options": [
@@ -65,7 +61,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Economy",
       "stem": "Which committee recommends the Monetary Policy stance in India?",
       "explanation": "The six-member Monetary Policy Committee (MPC) decides the policy rate.",
       "options": [
@@ -77,7 +72,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Sports",
       "stem": "In cricket, the DRS primarily uses which technology to track the ball?",
       "explanation": "Hawk-Eye ball-tracking is central to DRS decisions.",
       "options": [
@@ -89,7 +83,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Awards",
       "stem": "The 'Fields Medal' is associated with which field?",
       "explanation": "It is often described as the Nobel Prize of Mathematics.",
       "options": [
@@ -101,7 +94,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "International",
       "stem": "The UNFCCC Conference of the Parties (COP) primarily negotiates on:",
       "explanation": "COP is the decision-making body of the UNFCCC focused on climate change.",
       "options": [
@@ -113,7 +105,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "National",
       "stem": "Which agency manages India's foreign exchange reserves?",
       "explanation": "The RBI manages the reserves including gold and foreign currencies.",
       "options": [
@@ -125,7 +116,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Science & Tech",
       "stem": "In vaccines, 'mRNA' stands for:",
       "explanation": "mRNA means messenger RNA, used by certain vaccines to instruct cells to make proteins.",
       "options": [
@@ -137,7 +127,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Economy",
       "stem": "The fiscal deficit of the Union Government is primarily financed by:",
       "explanation": "Fiscal deficit is financed mainly by market borrowings.",
       "options": [
@@ -149,7 +138,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Environment",
       "stem": "Which gas has the highest global warming potential over 100 years among these?",
       "explanation": "Nitrous oxide has a higher GWP than methane and CO2 on a 100-year horizon.",
       "options": [
@@ -161,7 +149,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Govt Schemes",
       "stem": "The Ayushman Bharat PM-JAY scheme provides:",
       "explanation": "PM-JAY offers health insurance coverage for secondary and tertiary care hospitalization.",
       "options": [
@@ -173,7 +160,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "International",
       "stem": "Which currency is used by most Eurozone countries?",
       "explanation": "The euro (EUR) is shared by Eurozone member states.",
       "options": [
@@ -185,7 +171,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Science & Tech",
       "stem": "In 5G networks, the 'mmWave' band refers roughly to frequencies:",
       "explanation": "mmWave typically refers to ~24–100 GHz spectrum allocations.",
       "options": [
@@ -197,7 +182,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "National",
       "stem": "Who appoints the Chief Election Commissioner of India?",
       "explanation": "The President of India appoints the CEC.",
       "options": [
@@ -209,7 +193,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Economy",
       "stem": "The term 'Repo Rate' is best described as:",
       "explanation": "Repo rate is the rate at which RBI lends short-term funds to banks against securities.",
       "options": [
@@ -221,7 +204,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Environment",
       "stem": "The 'Ramsar Convention' relates to:",
       "explanation": "It is an international treaty for the conservation and wise use of wetlands.",
       "options": [
@@ -233,7 +215,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Sports",
       "stem": "The 'Grand Slam' in tennis means winning:",
       "explanation": "All four majors (Australian Open, French Open, Wimbledon, US Open) in a single calendar year.",
       "options": [
@@ -245,7 +226,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Awards",
       "stem": "The 'Booker Prize' recognizes notable works in:",
       "explanation": "It honors outstanding fiction, primarily novels written in English.",
       "options": [
@@ -257,7 +237,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "International",
       "stem": "The IMF provides which of the following primarily?",
       "explanation": "The IMF provides financial assistance and policy advice to countries facing balance-of-payments problems.",
       "options": [
@@ -269,7 +248,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Govt Schemes",
       "stem": "Under PM Kisan, eligible farmers receive:",
       "explanation": "PM-KISAN provides ₹6,000 per year in three equal installments.",
       "options": [
@@ -281,7 +259,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Science & Tech",
       "stem": "In cybersecurity, 'phishing' primarily aims to:",
       "explanation": "Phishing attempts to trick users into revealing sensitive information like passwords.",
       "options": [
@@ -293,7 +270,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "National",
       "stem": "The 'Right to Information (RTI) Act' was enacted in India in:",
       "explanation": "The RTI Act came into force in 2005.",
       "options": [
@@ -305,7 +281,6 @@
     },
     {
       "date": "2025-08-26",
-      "category": "Economy",
       "stem": "Which market is associated with buying and selling of newly issued securities?",
       "explanation": "The primary market deals with new issues; secondary market deals with already issued securities.",
       "options": [

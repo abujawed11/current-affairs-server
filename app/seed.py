@@ -176,7 +176,7 @@ import json
 import sys
 from dataclasses import dataclass
 from datetime import datetime
-from typing import List
+from typing import List, Optional
 
 from dotenv import load_dotenv
 import os
@@ -199,7 +199,6 @@ class OptionIn:
 @dataclass
 class QuestionIn:
     date: str
-    category: str
     stem: str
     explanation: str
     options: List[OptionIn]
@@ -208,6 +207,7 @@ class QuestionIn:
 class TestIn:
     title: str
     duration_sec: int
+    category: Optional[str]
     questions: List[QuestionIn]
 
 # ---------- Validation ----------
@@ -225,6 +225,9 @@ def validate_payload(obj: dict) -> TestIn:
 
     title = str(obj["title"]).strip()
     duration_sec = int(obj["duration_sec"])
+    category = obj.get("category")  # Optional field
+    if category:
+        category = str(category).strip()
     raw_qs = obj["questions"]
     if not title:
         raise ValueError("title must be non-empty")
@@ -235,7 +238,7 @@ def validate_payload(obj: dict) -> TestIn:
 
     questions: List[QuestionIn] = []
     for i, q in enumerate(raw_qs, start=1):
-        for k in ("date", "category", "stem", "explanation", "options"):
+        for k in ("date", "stem", "explanation", "options"):
             if k not in q:
                 raise ValueError(f"Question #{i} missing '{k}'")
         # date
@@ -265,14 +268,13 @@ def validate_payload(obj: dict) -> TestIn:
         questions.append(
             QuestionIn(
                 date=q["date"],
-                category=str(q["category"]).strip(),
                 stem=str(q["stem"]).strip(),
                 explanation=str(q["explanation"]).strip(),
                 options=opts,
             )
         )
 
-    return TestIn(title=title, duration_sec=duration_sec, questions=questions)
+    return TestIn(title=title, duration_sec=duration_sec, category=category, questions=questions)
 
 # ---------- Insert ----------
 async def insert_test(session: AsyncSession, payload: TestIn) -> tuple[int, str]:
@@ -282,7 +284,7 @@ async def insert_test(session: AsyncSession, payload: TestIn) -> tuple[int, str]
         raise ValueError(f"Test with title '{payload.title}' already exists (id={existing.id}, testId={existing.testId}).")
 
     # Create Test
-    t = Test(title=payload.title, duration_sec=payload.duration_sec)
+    t = Test(title=payload.title, duration_sec=payload.duration_sec, category=payload.category)
     session.add(t)
     await session.flush()                 # get t.id
     t.testId = make_code("TEST", t.id)    # 👈 set code
@@ -292,7 +294,7 @@ async def insert_test(session: AsyncSession, payload: TestIn) -> tuple[int, str]
         qrow = Question(
             test_id=t.id,
             date=datetime.strptime(q.date, "%Y-%m-%d").date(),
-            category=q.category,
+            category=payload.category or "general",  # Use test category or default
             stem=q.stem,
             explanation=q.explanation,
         )
