@@ -342,7 +342,6 @@ from datetime import datetime, timezone
 import random
 
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from ..db import get_db
@@ -370,135 +369,6 @@ async def _get_option_by_code(db: AsyncSession, optionId: str) -> Option | None:
 
 async def _get_attempt_by_code(db: AsyncSession, attemptId: str) -> Attempt | None:
     return (await db.execute(select(Attempt).where(Attempt.attemptId == attemptId))).scalar_one_or_none()
-
- # ---------- create attempt ----------
-# @router.post("", response_model=AttemptOut)
-# async def create_attempt(
-#       payload: AttemptCreateIn,
-#       db: AsyncSession = Depends(get_db),
-#       user: User = Depends(get_current_user_jwt),
-#   ):
-#       log.info("create_attempt: user_id=%s, testId=%s, forceNew=%s",
-#                user.id, payload.testId, payload.forceNew)
-
-#       test = await _get_test_by_code(db, payload.testId)
-#       if not test:
-#           log.warning("create_attempt: test not found testId=%s", payload.testId)
-#           raise HTTPException(status_code=404, detail="Test not found")
-
-#       # Check for existing in-progress attempts for this test
-#       # Use .first() instead of .scalar_one_or_none() to handle multiple results
-#       existing_attempt = (await db.execute(
-#           select(Attempt).where(
-#               Attempt.user_id == user.id,
-#               Attempt.test_id == test.id,
-#               Attempt.submitted_at.is_(None)  # Not submitted
-#           ).order_by(Attempt.started_at.desc())  # Get most recent if multiple
-#       )).first()
-
-#       if existing_attempt:
-#           existing_attempt = existing_attempt[0]  # Extract the Attempt object
-
-#       # If forceNew=True (Take Again), delete ALL existing attempts for this test
-#       if payload.forceNew:
-#           log.info("create_attempt: FORCE NEW - deleting ALL existing attempts for test")
-
-#           # Get all in-progress attempts for this test
-#           all_existing = (await db.execute(
-#               select(Attempt).where(
-#                   Attempt.user_id == user.id,
-#                   Attempt.test_id == test.id,
-#                   Attempt.submitted_at.is_(None)  # Not submitted
-#               )
-#           )).scalars().all()
-
-#           # Delete all attempt answers and attempts
-#           from sqlalchemy import delete
-#           for att in all_existing:
-#               await db.execute(
-#                   delete(AttemptAnswer).where(AttemptAnswer.attempt_id == att.id)
-#               )
-#               await db.delete(att)
-
-#           await db.flush()
-#           existing_attempt = None
-
-#       # If there's still an existing attempt (Resume case), return it
-#       if existing_attempt:
-#           log.info("create_attempt: RESUME - returning existing attemptId=%s",
-#                    existing_attempt.attemptId)
-
-#           # Get existing questions and answers
-#           aas = (await db.execute(
-#               select(AttemptAnswer).where(AttemptAnswer.attempt_id == existing_attempt.id)
-#               .order_by(AttemptAnswer.position)
-#           )).scalars().all()
-
-#           out_questions: list[QuestionOut] = []
-#           for aa in aas:
-#               q = await db.get(Question, aa.question_id)
-#               if not q.questionId:
-#                   q.questionId = make_code("QUS", q.id)
-
-#               opts = (await db.execute(select(Option).where(Option.question_id == q.id))).scalars().all()
-#               for o in opts:
-#                   if not o.optionId:
-#                       o.optionId = make_code("OPT", o.id)
-
-#               out_questions.append(QuestionOut(
-#                   questionId=q.questionId,
-#                   date=q.date,
-#                   category=q.category,
-#                   stem=q.stem,
-#                   options=[QuestionOptionOut(optionId=o.optionId, text=o.text) for o in opts],
-#               ))
-
-#           await db.commit()  # Save any generated codes
-#           return AttemptOut(
-#               attemptId=existing_attempt.attemptId,
-#               testId=test.testId,
-#               questions=out_questions
-#           )
-
-#       # CREATE FRESH ATTEMPT (either first time or forceNew=True)
-#       log.info("create_attempt: CREATING FRESH ATTEMPT for testId=%s", payload.testId)
-
-#       qrows = (await db.execute(select(Question).where(Question.test_id == test.id))).scalars().all()
-#       if not qrows:
-#           raise HTTPException(status_code=400, detail="No questions in test")
-
-#       random.shuffle(qrows)
-
-#       attempt = Attempt(user_id=user.id, test_id=test.id)
-#       db.add(attempt)
-#       await db.flush()
-#       attempt.attemptId = make_code("ATT", attempt.id)
-
-#       log.info("create_attempt: FRESH attempt created attemptId=%s", attempt.attemptId)
-
-#       out_questions: list[QuestionOut] = []
-#       for idx, q in enumerate(qrows, start=1):
-#           if not q.questionId:
-#               q.questionId = make_code("QUS", q.id)
-#           db.add(AttemptAnswer(attempt_id=attempt.id, question_id=q.id, position=idx))
-
-#           opts = (await db.execute(select(Option).where(Option.question_id == q.id))).scalars().all()
-#           for o in opts:
-#               if not o.optionId:
-#                   o.optionId = make_code("OPT", o.id)
-#           random.shuffle(opts)
-
-#           out_questions.append(QuestionOut(
-#               questionId=q.questionId,
-#               date=q.date,
-#               category=q.category,
-#               stem=q.stem,
-#               options=[QuestionOptionOut(optionId=o.optionId, text=o.text) for o in opts],
-#           ))
-
-#       await db.commit()
-#       return AttemptOut(attemptId=attempt.attemptId, testId=test.testId, questions=out_questions)
-
 
 # ---------- create attempt ----------
 @router.post("", response_model=AttemptOut)
@@ -560,12 +430,90 @@ async def create_attempt(
           existing_attempt = None
           log.info("create_attempt: Successfully deleted all existing attempts")
 
+          if existing_attempt:
+                log.info(
+                    "create_attempt: RESUME - returning existing attemptId=%s",
+                    existing_attempt.attemptId
+                )
+
+                # get existing answers in order
+                aas = (await db.execute(
+                    select(AttemptAnswer)
+                    .where(AttemptAnswer.attempt_id == existing_attempt.id)
+                    .order_by(AttemptAnswer.position)
+                )).scalars().all()
+
+                out_questions: list[QuestionOut] = []
+                for aa in aas:
+                    q = await db.get(Question, aa.question_id)
+                    if not q.questionId:
+                        q.questionId = make_code("QUS", q.id)
+
+                    opts = (await db.execute(
+                        select(Option).where(Option.question_id == q.id)
+                    )).scalars().all()
+
+                    for o in opts:
+                        if not o.optionId:
+                            o.optionId = make_code("OPT", o.id)
+
+                    out_questions.append(QuestionOut(
+                        questionId=q.questionId,
+                        date=q.date,
+                        category=q.category,
+                        stem=q.stem,
+                        options=[QuestionOptionOut(optionId=o.optionId, text=o.text) for o in opts],
+                    ))
+
+                await db.commit()  # persist any generated codes
+                return AttemptOut(
+                    attemptId=existing_attempt.attemptId,
+                    testId=test.testId,
+                    questions=out_questions,
+                )
+
+
       # If there's still an existing attempt (Resume case), return it
-      if existing_attempt:
-          log.info("create_attempt: RESUME - returning existing attemptId=%s",
-                   existing_attempt.attemptId)
-          # ... existing resume code ...
-          return AttemptOut(...)
+    #   if existing_attempt:
+    #     log.info("create_attempt: RESUME - returning existing attemptId=%s",
+    #                existing_attempt.attemptId)
+    #       # ... existing resume code ...
+    # # get existing answers in order
+    #     aas = (await db.execute(
+    #             select(AttemptAnswer)
+    #             .where(AttemptAnswer.attempt_id == existing_attempt.id)
+    #             .order_by(AttemptAnswer.position)
+    #         )).scalars().all()
+
+    #     out_questions: list[QuestionOut] = []
+    #     for aa in aas:
+    #             q = await db.get(Question, aa.question_id)
+    #             if not q.questionId:
+    #                 q.questionId = make_code("QUS", q.id)
+
+    #             opts = (await db.execute(
+    #                 select(Option).where(Option.question_id == q.id)
+    #             )).scalars().all()
+
+    #             for o in opts:
+    #                 if not o.optionId:
+    #                     o.optionId = make_code("OPT", o.id)
+
+    #             out_questions.append(QuestionOut(
+    #                 questionId=q.questionId,
+    #                 date=q.date,
+    #                 category=q.category,
+    #                 stem=q.stem,
+    #                 options=[QuestionOptionOut(optionId=o.optionId, text=o.text) for o in opts],
+    #             ))
+
+    #     await db.commit()  # persist any generated codes
+    #     return AttemptOut(
+    #             attemptId=existing_attempt.attemptId,
+    #             testId=test.testId,
+    #             questions=out_questions,
+    #         )
+        #   return AttemptOut(...)
 
       # CREATE FRESH ATTEMPT (either first time or forceNew=True)
       log.info("create_attempt: CREATING FRESH ATTEMPT for testId=%s", payload.testId)
@@ -656,46 +604,6 @@ async def answer(
     await db.commit()
     log.info("answer: saved attemptId=%s question_pk=%s option_pk=%s", attemptId, q.id, opt.id)
     return {"ok": True}
-
-# ---------- submit ----------
-# @router.post("/{attemptId}/submit")
-# async def submit(
-#     attemptId: str,
-#     payload: SubmitIn,
-#     db: AsyncSession = Depends(get_db),
-#     user: User = Depends(get_current_user_jwt),
-# ):
-#     from ..services.scoring import compute_score
-#     from sqlalchemy import select, func
-
-#     log.info("submit: attemptId=%s user_id=%s", attemptId, user.id)
-
-#     att = await _get_attempt_by_code(db, attemptId)
-#     if not att:
-#         raise HTTPException(status_code=404, detail="Attempt not found")
-#     if att.user_id != user.id:
-#         raise HTTPException(status_code=403, detail="Not your attempt")
-
-#     rows = (await db.execute(select(AttemptAnswer).where(AttemptAnswer.attempt_id == att.id))).scalars().all()
-#     correct_flags: list[bool] = []
-#     for r in rows:
-#         if r.option_id is None:
-#             correct_flags.append(False)
-#             r.is_correct = False
-#         else:
-#             o = await db.get(Option, r.option_id)
-#             r.is_correct = bool(o.is_correct)
-#             correct_flags.append(bool(o.is_correct))
-
-#     score, total, acc = compute_score(correct_flags)
-#     att.score = score
-#     att.total = total
-#     att.accuracy_pct = acc
-#     att.time_taken_sec = payload.time_taken_sec
-#     att.submitted_at = func.now()
-
-#     await db.commit()
-#     return {"attemptId": att.attemptId, "score": score, "total": total, "accuracy_pct": acc}
 
 
 # ---------- submit ----------
